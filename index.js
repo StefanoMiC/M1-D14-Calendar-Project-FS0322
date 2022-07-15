@@ -57,6 +57,7 @@ const saveMeeting = function () {
       // console.log(appointments);
 
       showAppointments(indexOfToday); // this triggers the function that searches the array for appointments in that day, by passing the index of the day as arguement
+      window.scrollTo(0, document.body.scrollHeight); // scrolls the page to the bottom to show the new appointment
     } else if (!meetingTime.value && !meetingName.value) {
       // if both time and name are missing: alert
       alert("Pick a time and set the name of the meeting");
